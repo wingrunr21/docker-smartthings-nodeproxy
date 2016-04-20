@@ -15,7 +15,7 @@ Store the config somewhere on your host machine. This directory will be mounted 
 ### Set up container
 
 ```bash
-docker build -t wingrunr21/smartthings-nodeproxy https://github.com/wingrunr21/docker-smartthings-nodeproxy
+docker build -t wingrunr21/smartthings-nodeproxy https://raw.githubusercontent.com/wingrunr21/docker-smartthings-nodeproxy/master/Dockerfile
 docker create --name=smartthings-nodeproxy --restart=unless-stopped -v /path/to/config/directory:/config -p 8080:8080 wingrunr21/smartthings-nodeproxy
 ```
 
